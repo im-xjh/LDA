@@ -8,13 +8,13 @@ input_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/preprocess
 base_output_path = '/Users/jhx/Documents/Code/黑神话女性数据/1-数据清洗/'
 
 # 生成动态文件名
-def generate_filename(base_path, source_file, suffix):
+def generate_filename(base_path, source_file, suffix, ext='jsonl'):
     base_name = os.path.splitext(os.path.basename(source_file))[0]
-    return os.path.join(base_path, f"{base_name}_{suffix}.jsonl")
+    return os.path.join(base_path, f"{base_name}_{suffix}.{ext}")
 
 retweet_file = generate_filename(base_output_path, input_file, 'repost')
 non_retweet_file = generate_filename(base_output_path, input_file, 'no_repost')
-output_stats_file = generate_filename(base_output_path, input_file, 'stats.xlsx')
+output_stats_file = generate_filename(base_output_path, input_file, 'stats', ext='xlsx')
 
 # 数据容器
 retweet_data = []

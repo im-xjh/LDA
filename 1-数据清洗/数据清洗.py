@@ -2,10 +2,10 @@ import json
 import pandas as pd
 
 # 文件路径
-input_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/preprocessed_data.jsonl'
-output_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/preprocessed_data1.jsonl'
-filtered_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/preprocessed_data111.jsonl'
-summary_csv = '/Users/jhx/Documents/Code/黑神话女性数据/1-数据清洗/cleaning_summary3.csv'
+input_file = '/Users/jhx/Documents/Code/黑神话女性数据/1-数据清洗/preprocessed_data_repost.jsonl'
+output_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/1-数据清洗/preprocessed_data_repost1.jsonl'
+filtered_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/1-数据清洗/preprocessed_data_repost111.jsonl'
+summary_csv = '/Users/jhx/Documents/Code/黑神话女性数据/1-数据清洗/cleaning_summary4.csv'
 
 # 定义关键词集合
 A = ["黑神话", "黑猴", "游戏", "黑悟空", "吗喽", "马喽", "3a", "3A", "主创", "杨奇"]
