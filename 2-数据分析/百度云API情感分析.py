@@ -8,9 +8,9 @@ import time
 from collections import deque
 
 # 定义文件路径
-input_file_path = '/Users/jhx/Documents/Code/黑神话女性数据/黑神话女性原始数据_cleaned_cleaned.jsonl'
-output_file_path = '/Users/jhx/Documents/Code/黑神话女性数据/黑神话女性原始数据_cleaned_cleaned_sentiment.jsonl'
-stats_file_path = '/Users/jhx/Documents/Code/黑神话女性数据/黑神话sample情感统计.csv'
+input_file_path = '0数据/黑神话女性_cleaned.jsonl'
+output_file_path = '0数据/黑神话女性_cleaned_sentiment.jsonl'
+stats_file_path = '情感统计.csv'
 
 # 百度API凭证 (请补充你的API_KEY和SECRET_KEY)
 API_KEY = 'urLgOtN2IlIE5JgUzm0fTtqL'

@@ -17,7 +17,7 @@ from tqdm import tqdm
 from matplotlib import font_manager
 
 # 设置文件路径
-preprocessed_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/preprocessed_data.jsonl'  # 预处理后的数据文件路径
+preprocessed_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/分开做LDA/蓝色.jsonl'  # 预处理后的数据文件路径
 
 def main():
     # 1. 读取预处理后的数据
