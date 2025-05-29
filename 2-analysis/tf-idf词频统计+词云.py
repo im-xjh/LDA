@@ -9,7 +9,7 @@ from matplotlib.font_manager import FontProperties
 import os
 
 # 读取JSONL文件
-file_path = '/Users/jhx/Documents/Code/黑神话女性数据/黑神话女性all.json'
+file_path = ''
 with open(file_path, 'r', encoding='utf-8') as file:
     data = [json.loads(line) for line in file]
 
@@ -17,7 +17,7 @@ with open(file_path, 'r', encoding='utf-8') as file:
 texts = [entry['text'] for entry in data]
 
 # 读取停词表
-stopword_path = '/Users/jhx/Documents/Code/stopword.txt'
+stopword_path = ''  # 停用词文件路径
 with open(stopword_path, 'r', encoding='utf-8') as file:
     stopwords = file.read().splitlines()
 
@@ -44,7 +44,7 @@ sorted_tfidf = sorted(tfidf_dict.items(), key=lambda item: item[1], reverse=True
 result = [{"word": word, "score": score} for word, score in sorted_tfidf]
 
 # 保存为JSON文件
-output_file = '/Users/jhx/Documents/Code/WeiboSpider/output/黑神话.jsonl'
+output_file = ''    # 输出文件路径
 with open(output_file, 'w', encoding='utf-8') as f:
     json.dump(result, f, ensure_ascii=False, indent=4)
 
@@ -58,7 +58,7 @@ with open(output_file, 'r', encoding='utf-8') as file:
 word_freq = {item['word']: item['score'] for item in result}
 
 # 设置字体路径，确保字体文件存在
-font_path = '/Users/jhx/Library/Fonts/SourceHanSansCN-Regular.otf'
+font_path = ''
 
 
 # 生成词云图
@@ -78,7 +78,7 @@ plt.axis('off')
 plt.title("黑神话", fontproperties=FontProperties(fname=font_path))
 
 # 保存图片到与结果json文件相同的文件夹下
-output_image_file = '/Users/jhx/Documents/Code/WeiboSpider/output/黑神话.png'
+output_image_file = ''  # 输出图片路径
 plt.savefig(output_image_file)
 
 plt.show()

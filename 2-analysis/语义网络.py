@@ -4,7 +4,7 @@ import pandas as pd
 from tqdm import tqdm  # 导入进度条库
 
 # 读取JSONL文件
-file_path = '/Users/jhx/Documents/Code/weibospider/output/comment_分词.jsonl'
+file_path = ''
 
 def read_jsonl(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -64,8 +64,8 @@ def main():
     nodes, edges = generate_tables(G)
 
     # 保存表格为CSV文件
-    nodes.to_csv('network_nodes3.9.csv', index=False, encoding='utf-8')
-    edges.to_csv('network_edges3.9.csv', index=False, encoding='utf-8')
+    nodes.to_csv('network_nodes.csv', index=False, encoding='utf-8')
+    edges.to_csv('network_edges.csv', index=False, encoding='utf-8')
 
     print("节点表格和边表格已生成并保存为CSV文件。")
 

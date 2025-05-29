@@ -2,10 +2,10 @@ import csv
 import json
 
 # 文件路径设置
-csv_file = '/Users/jhx/Desktop/黑神话kmeans=2.csv'
-input_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/cleaned_cleaned.jsonl'
-output_jsonl_0 = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/KOL文本提取/antifeminism.jsonl'
-output_jsonl_1 = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/KOL文本提取/feminism.jsonl'
+csv_file = ''
+input_jsonl = ''
+output_jsonl_0 = ''
+output_jsonl_1 = ''
 
 # 1. 读取 CSV 文件，构建 name 到 modularity_class 的映射字典
 csv_mapping = {}

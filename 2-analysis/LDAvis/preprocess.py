@@ -11,9 +11,9 @@ import json
 from tqdm import tqdm
 
 # 设置文件路径
-data_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/黑神话女性_cleaned.jsonl'  # 原始数据文件路径
-stop_file = '/Users/jhx/Documents/Code/stopword.txt'  # 停用词文件路径
-dic_file = '/Users/jhx/Documents/Code/黑神话女性数据/数据分析/LDAvis/dic.txt'
+data_file = ''  # 原始数据文件路径
+stop_file = ''  # 停用词文件路径
+dic_file = ''   # 自定义词典文件路径
 
 def main():
     # 1. 读取数据，保留全部原始字段

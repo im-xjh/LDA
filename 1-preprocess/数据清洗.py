@@ -2,10 +2,10 @@ import json
 import pandas as pd
 
 # 文件路径
-input_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/黑神话女性原始数据.jsonl'
-output_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/cleaned.jsonl'
-filtered_jsonl = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/filtered.jsonl'
-summary_csv = '1-数据清洗/cleaning_summary.csv'
+input_file = ''
+output_jsonl = ''
+filtered_jsonl = ''
+summary_csv = ''
 
 # 定义关键词集合
 A = ["黑神话", "黑猴", "游戏", "黑悟空", "吗喽", "马喽", "3a", "3A", "主创", "杨奇"]

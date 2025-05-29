@@ -2,9 +2,9 @@ import json
 import csv
 
 # 文件路径
-input_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/cleaned.jsonl'
-edges_file = '/Users/jhx/Documents/Code/黑神话女性数据/黑神话边表格.csv'
-nodes_file = '/Users/jhx/Documents/Code/黑神话女性数据/黑神话节点表格.csv'
+input_file = ''
+edges_file = ''
+nodes_file = ''
 
 # 使用集合存储节点，避免重复
 nodes = set()

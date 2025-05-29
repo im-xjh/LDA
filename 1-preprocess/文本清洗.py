@@ -3,7 +3,7 @@ import re
 import os
 
 # 输入文件路径
-input_file = '/Users/jhx/Documents/Code/黑神话女性数据/0数据/antifeminism.jsonl'
+input_file = ''
 
 # 自动生成输出文件路径，在输入文件名后添加 '_cleaned'
 base, ext = os.path.splitext(input_file)

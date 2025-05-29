@@ -8,13 +8,13 @@ import time
 from collections import deque
 
 # 定义文件路径
-input_file_path = '/Users/jhx/Desktop/市场调查/【公园健身器材】所有组合话题微博评论.csv'
-output_file_path = '/Users/jhx/Documents/Code/weibospider/output/commentsentiment.csv'
-stats_file_path = '情感统计.csv'
+input_file_path = ''    # 输入文件路径
+output_file_path = ''   # 输出文件路径
+stats_file_path = '' # 统计结果文件路径
 
 # 百度API凭证 (请补充你的API_KEY和SECRET_KEY)
-API_KEY = 'urLgOtN2IlIE5JgUzm0fTtqL'
-SECRET_KEY = 'Z0JEykDL8UBBWEXvNkix9O0MStaEeAsL'
+API_KEY = ''
+SECRET_KEY = ''
 
 # 设置日志记录
 logging.basicConfig(

@@ -7,11 +7,11 @@ from matplotlib.font_manager import FontProperties
 from matplotlib.font_manager import FontProperties
 
 # 设置字体路径
-font_path = "/Users/jhx/Library/Fonts/SourceHanSansCN-Regular.otf"
+font_path = ''
 font_prop = FontProperties(fname=font_path)
 
 # 输入文件路径
-input_file = "/Users/jhx/Documents/Code/黑神话女性数据/0数据/cleaned.jsonl"
+input_file = ''
 
 # 加载 JSON 数据
 data = []
@@ -48,7 +48,7 @@ plt.legend(title="情感倾向", fontsize=12, prop=font_prop)
 plt.grid(True, linestyle='--', alpha=0.6)
 
 # 保存结果
-output_path = "/Users/jhx/Documents/Code/黑神话女性数据/黑神话情感讨论量统计.png"
+output_path = ""    # 输出文件路径
 plt.tight_layout()
 plt.savefig(output_path, dpi=400, format='png')  # 增加分辨率
 plt.show()
